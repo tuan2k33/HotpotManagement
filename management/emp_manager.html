@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Staff Management
+    </title>
+    <link rel="stylesheet" href="emp_manager.css">
+</head>
+
+<body>
+    <div class="sidebar" id="sidebar">
+        <img src="./img/hotpot.png" onclick=sidebar_toggle() id="hotpot">
+        <div class="list">
+            <div class="nav" id="sb_title">Sidebar</div>
+            <div class="nav" id="menu">
+                <i class="fa fa-fw fa-book"></i><a href="./menu_manager.html" class="tab_name" id="a">Menu</a>
+            </div>
+            <div class="nav" id="employee">
+                <i class="fa fa-fw fa-address-book"></i><a href="./emp_manager.html" class="tab_name">Employee</a>
+            </div>
+            <div class="nav" id="report">
+                <i class="fa fa-fw fa-dollar"></i><a href="./report_manager.html" class="tab_name">Report</a>
+            </div>
+            <div class="nav" id="home">
+                <i class="fa fa-fw fa-home"></i><a href="./home_manager.html" class="tab_name">Home</a>
+            </div>
+            <div class="logout">
+                <i class="fa fa-fw fa-sign-out"></i><a href="" class="tab_name">Log out</a>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <h1>QUẢN LÝ NHÂN VIÊN</h1>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();"autocomplete="off"
+                method="POST" 
+                action="https://script.google.com/macros/s/AKfycbygHbkurHJJcswURTSEH5uztnTgnbzgps8i0PquVs-dQLvJHvOW9Blqi7rIED6Jx1Us_A/exec">
+                    <div>
+                        <label>Tên</label><label class="validation-error hide" id="fullNameValidationError">Vui lòng nhập tên!</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Ngày sinh</label>
+                        <input type="date" name="dob" id="dob">
+                    </div>
+                    <div>
+                        <label>CCCD</label>
+                        <input type="text" name="ID" id="ID">
+                    </div>
+                    <div>
+                        <label>SĐT</label>
+                        <input type="text" name="pNum" id="pNum">
+                    </div>
+                    <div>
+                        <label>Địa chỉ</label>
+                        <input type="text" name="address" id="address">
+                    </div>
+                    <div  class="buttons">
+                        <input type="submit" value="Thêm">
+                    </div>
+                </form>
+            </td>
+        </table>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Tên</th>
+                            <th>Ngày sinh</th>
+                            <th>CCCD</th>
+                            <th>SĐT</th>
+                            <th>Địa chỉ</th>
+                            <th>Chỉnh sửa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    <script src="emp_manager.js"></script>
+</body>
+
+</html>

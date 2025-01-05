@@ -1,0 +1,133 @@
+body > table{
+    width: 50%;
+    font-family: Helvetica, sans-serif;
+}
+    .header {
+        background: white;
+        color: black;
+        padding: 1rem;
+        padding-left: 300px;
+    }
+    .sidebar{
+        height: 100%;
+        width: 270px;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #00BFFF;
+        padding: 0px;
+        transition: 0.2s;
+    }
+    
+    #hotpot{
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        transition: 0.2s;
+        transform: rotate(0deg);
+        width: 50px;
+        height: 50px;
+    }
+    
+    .logout{
+        padding-left: 5px;
+        margin: 40px;
+        position: absolute;
+        bottom: 20px;
+        font-size: 30px;
+        display: block;
+    }
+    
+    .sidebar .list{
+        display: block;
+    }
+    
+    .sidebar .nav{
+        font-size: 35px;
+        padding: 10px, 20px;
+        display: block;
+        align-items: center;
+        margin: 40px;
+    }
+    
+    #sb_title{
+        font-size: 50px;
+    }
+    
+    .tab_name{
+        display: inline-flex;
+        text-decoration: none;
+        color: black;
+    }
+table{
+    margin-left: 300px;
+    border-collapse: collapse;
+}
+table.list{
+    width: 70%;
+}
+
+td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+}
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+}
+tr:nth-child(0),table.list thead>tr {
+    background-color: #00BFFF;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=date] {
+	width: 100%;
+    padding: 12px 10px;
+    margin: 10px 0;
+    display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+input[type=submit]{
+    font-size:medium;
+    width: 100px;
+    background-color: #00BFFF;
+    color: #000;
+    padding: 10px 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form div.buttons{
+    text-align: right;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0000ee;
+    margin-right: 4px;
+}
+
+label.validation-error{
+    color:   red;
+    margin-left: 5px;
+}
+
+.hide{
+    display:none;
+}
