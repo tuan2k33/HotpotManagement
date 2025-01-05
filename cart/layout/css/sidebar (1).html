@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello</title>
+        <link href="./sidebar_manager.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    </head>
+
+    <body>
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <img src="./ref/triangle.png" onclick=sidebar_toggle() id="triangle">
+            <div class="list">
+                <div class="nav" id="sb_title">Sidebar</div>
+                <div class="nav" id="menu">
+                    <i class="fa fa-fw fa-book"></i><a href="./menu_manager.html" class="tab_name" id="a">Menu</a>
+                </div>
+                <div class="nav" id="employee">
+                    <i class="fa fa-fw fa-address-book"></i><a href="emp_manager.html" class="tab_name">Employee</a>
+                </div>
+                <div class="nav" id="report">
+                    <i class="fa fa-fw fa-dollar"></i><a href="report_manager.html" class="tab_name">Report</a>
+                </div>
+                <div class="nav" id="home">
+                    <i class="fa fa-fw fa-home"></i><a href="./home_manager.html" class="tab_name">Home</a>
+                </div>
+                <div class="logout">
+                    <i class="fa fa-fw fa-sign-out"></i><a href="" class="tab_name">Log out</a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function sidebar_toggle() {
+            if (document.getElementById("sidebar").style.width == "135px"){
+                document.getElementById("sidebar").style.width = "270px";
+                document.getElementById("sb_title").style.visibility = "visible";
+                document.getElementById("triangle").style.transform = "rotate(180deg)";
+                var n = document.getElementsByClassName("tab_name");
+                for (var i = 0; i < n.length; i++){
+                    n[i].style.position = "inline-block";
+                    n[i].style.visibility = "visible";
+                }
+            }
+            else{
+                document.getElementById("sidebar").style.width = "135px";
+                document.getElementById("sb_title").style.visibility = "hidden";
+                document.getElementById("triangle").style.transform = "rotate(0deg)";
+                var n = document.getElementsByClassName("tab_name");
+                for (var i = 0; i < n.length; i++){
+                    n[i].style.position = "absolute";
+                    n[i].style.visibility = "hidden";
+                }
+            }
+        }
+        </script>
+
+        <!--  -->
+
+    </body>
+</html>

@@ -1,0 +1,56 @@
+.sidebar{
+    height: 100%;
+    width: 270px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(13,184,214);
+    /* overflow-x: hidden; */
+    padding-top: 16px;
+    transition: 0.2s;
+  }
+
+#triangle{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: 0.2s;
+    transform: rotate(180deg);
+    width: 50px;
+    height: 50px;
+}
+
+.logout{
+    padding-left: 5px;
+    margin: 40px;
+    position: absolute;
+    bottom: 20px;
+    font-size: 30px;
+    display: block;
+}
+
+.sidebar .list{
+    display: block;
+}
+
+.sidebar .nav{
+    font-size: 35px;
+    padding: 10px, 20px;
+    display: block;
+    align-items: center;
+    margin: 40px;
+}
+
+#sb_title{
+    font-size: 50px;
+}
+
+.tab_name{
+    display: inline-flex;
+    text-decoration: none;
+    color: black;
+}
+
+/*  */
+
